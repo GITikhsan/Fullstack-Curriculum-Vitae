@@ -75,11 +75,19 @@ const skills = [
 const projects = [
   {
     title: 'Website Lucien Avenue',
-    image: '/BACKEND/images/myP1.png', // Contoh gambar dari Unsplash
-    description: 'Website toko sepatu yang menyediakan berbagai macam sepatu',
+    images: './myP1.png', // Contoh gambar dari Unsplash
+    description: 'Shoe store website that provides various kinds of shoes',
     tech: ['Vue.js', 'Laravel', 'Node.js'],
     link: 'https://github.com/GITikhsan/LUCIEN-AVENUE-FRONTEND.git',
     link2: 'https://github.com/GITikhsan/LUCIEN-AVENUE-BACKEND.git' 
+  },
+   {
+    title: 'Simple Hotel management system',
+    images: './myP1.png', // Contoh gambar dari Unsplash
+    description: 'Website toko sepatu yang menyediakan berbagai macam sepatu',
+    tech: ['c#','window'],
+    link: 'https://github.com/GITikhsan/SimpleHotelManagement.git', 
+    link2: 'https://github.com/GITikhsan/SimpleHotelManagement.git' 
   },
  
 ];
