@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/GITikhsan/Curriculum-Vitae-BACKEND#readme",
   "dependencies": {
+    "@vercel/postgres": "^0.10.0",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
