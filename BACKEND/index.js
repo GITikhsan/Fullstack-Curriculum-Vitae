@@ -19,5 +19,4 @@ http://localhost:${PORT}`);
 
 const { sql } = require('@vercel/postgres');
 
-// Wajib ada agar Vercel bisa menjalankan backend
 module.exports = app;
