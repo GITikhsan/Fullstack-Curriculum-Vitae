@@ -2,7 +2,7 @@
 const educationHistory = [
   {
     id: 1,
-    period: '2023 - Sekarang',
+    period: '2023 - Now',
     institution: 'Universitas Amikom Yogyakarta',
     major: 'S1 - Informatika'
   },
@@ -75,7 +75,7 @@ const skills = [
 const projects = [
   {
     title: 'Website Lucien Avenue',
-    images: './myP1.png', // Contoh gambar dari Unsplash
+    image: 'http://localhost:3000/images/myP1.png', // Contoh gambar dari Unsplash
     description: 'Shoe store website that provides various kinds of shoes',
     tech: ['Vue.js', 'Laravel', 'Node.js'],
     link: 'https://github.com/GITikhsan/LUCIEN-AVENUE-FRONTEND.git',
@@ -83,9 +83,9 @@ const projects = [
   },
    {
     title: 'Simple Hotel management system',
-    images: './myP1.png', // Contoh gambar dari Unsplash
-    description: 'Website toko sepatu yang menyediakan berbagai macam sepatu',
-    tech: ['c#','window'],
+    image: 'http://localhost:3000/images/myP2.png', // Contoh gambar dari Unsplash
+    description: 'Hotel management is the process of managing hotel operations to ensure they run efficiently and profitably. It covers aspects such as room reservations, guest services, room management, and employee management.',
+    tech: ['c#','windows forms app','.net framework','mysql'],
     link: 'https://github.com/GITikhsan/SimpleHotelManagement.git', 
     link2: 'https://github.com/GITikhsan/SimpleHotelManagement.git' 
   },
