@@ -14,16 +14,35 @@ import SectionTitle from './SectionTitle.vue';
 //   }
 // });
 
-const projects = ref([]);
-const API_URL = import.meta.env.PROD ? 'https://BACKEND.vercel.app/api/projects' :
-'https://BACKEND.vercel.app/api/projects';
-onMounted(async () => {
-try {
-projects.value = (await axios.get(API_URL)).data;
-} catch (error) {
-console.error('Gagal mengambil data proyek:', error);
-}
-});
+// const projects = ref([]);
+// const API_URL = import.meta.env.PROD ? '/api/projects' :
+// 'http://localhost:3000/api/projects';
+// onMounted(async () => {
+// try {
+// projects.value = (await axios.get(API_URL)).data;
+// } catch (error) {
+// console.error('Gagal mengambil data proyek:', error);
+// }
+// });
+
+const projects = [
+  {
+    title: 'Website Lucien Avenue',
+    image: './images/myP1.png', // Contoh gambar dari Unsplash
+    description: 'Shoe store website that provides various kinds of shoes',
+    tech: ['Vue.js', 'Laravel', 'Node.js'],
+    link: 'https://github.com/GITikhsan/LUCIEN-AVENUE-FRONTEND.git',
+    link2: 'https://github.com/GITikhsan/LUCIEN-AVENUE-BACKEND.git' 
+  },
+   {
+    title: 'Simple Hotel management system',
+    image: './images/myP2.png', // Contoh gambar dari Unsplash
+    description: 'Hotel management is the process of managing hotel operations to ensure they run efficiently and profitably. It covers aspects such as room reservations, guest services, room management, and employee management.',
+    tech: ['c#','windows forms app','.net framework','mysql'],
+    link: 'https://github.com/GITikhsan/SimpleHotelManagement.git', 
+    link2: 'https://github.com/GITikhsan/SimpleHotelManagement.git' 
+  },
+]
 </script>
 
 <template>

@@ -14,17 +14,29 @@ import SectionTitle from './SectionTitle.vue';
 //   }
 // });
 
-const educationHistory = ref([]);
 
-const API_URL = import.meta.env.PROD ? 'https://BACKEND.vercel.app/api/education' :
-'https://BACKEND.vercel.app/api/education';
-onMounted(async () => {
-try {
-educationHistory.value = (await axios.get(API_URL)).data;
-} catch (error) {
-console.error('Gagal mengambil data pendidikan:', error);
-}
-});
+
+// const educationHistory = ref([]);
+
+// const API_URL = import.meta.env.PROD ? '/api/education' :
+// 'http://localhost:3000/api/education';
+// onMounted(async () => {
+// try {
+// educationHistory.value = (await axios.get(API_URL)).data;
+// } catch (error) {
+// console.error('Gagal mengambil data pendidikan:', error);
+// }
+// });
+
+
+const educationHistory = [
+  {
+    id: 1,
+    period: '2023 - Now',
+    institution: 'Universitas Amikom Yogyakarta',
+    major: 'S1 - Informatika'
+  },
+];
 </script>
 
 <template>
