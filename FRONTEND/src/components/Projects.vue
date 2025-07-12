@@ -15,7 +15,7 @@ import SectionTitle from './SectionTitle.vue';
 // });
 
 const projects = ref([]);
-const API_URL = import.meta.env.PROD ? '/api/projects' :
+const API_URL = import.meta.env.PROD ? 'https://BACKEND.vercel.app/api/projects' :
 'https://BACKEND.vercel.app/api/projects';
 onMounted(async () => {
 try {

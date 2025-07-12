@@ -16,7 +16,7 @@ import SectionTitle from './SectionTitle.vue';
 
 const educationHistory = ref([]);
 
-const API_URL = import.meta.env.PROD ? '/api/education' :
+const API_URL = import.meta.env.PROD ? 'https://BACKEND.vercel.app/api/education' :
 'https://BACKEND.vercel.app/api/education';
 onMounted(async () => {
 try {

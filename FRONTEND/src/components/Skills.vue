@@ -13,7 +13,7 @@ import SectionTitle from './SectionTitle.vue'
 // })
 
 const skills = ref([]);
-const API_URL = import.meta.env.PROD ? '/api/skills' :
+const API_URL = import.meta.env.PROD ? 'https://BACKEND.vercel.app/api/skills' :
 'https://BACKEND.vercel.app/api/skills';
 onMounted(async () => {
 try {
