@@ -16,7 +16,7 @@ import SectionTitle from './SectionTitle.vue';
 
 const projects = ref([]);
 const API_URL = import.meta.env.PROD ? '/api/projects' :
-'http://localhost:3000/api/projects';
+'https://BACKEND.vercel.app/api/projects';
 onMounted(async () => {
 try {
 projects.value = (await axios.get(API_URL)).data;

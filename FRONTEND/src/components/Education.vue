@@ -17,7 +17,7 @@ import SectionTitle from './SectionTitle.vue';
 const educationHistory = ref([]);
 
 const API_URL = import.meta.env.PROD ? '/api/education' :
-'http://localhost:3000/api/education';
+'https://BACKEND.vercel.app/api/education';
 onMounted(async () => {
 try {
 educationHistory.value = (await axios.get(API_URL)).data;

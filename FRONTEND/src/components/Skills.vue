@@ -14,7 +14,7 @@ import SectionTitle from './SectionTitle.vue'
 
 const skills = ref([]);
 const API_URL = import.meta.env.PROD ? '/api/skills' :
-'http://localhost:3000/api/skills';
+'https://BACKEND.vercel.app/api/skills';
 onMounted(async () => {
 try {
 skills.value = (await axios.get(API_URL)).data;
