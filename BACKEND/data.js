@@ -6,7 +6,6 @@ const educationHistory = [
     institution: 'Universitas Amikom Yogyakarta',
     major: 'S1 - Informatika'
   },
-
 ];
 
 const skills = [

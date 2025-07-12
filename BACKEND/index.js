@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.get('/api/education', async (req, res) => {
 try {
-const { rows } = await sql`SELECT* FROM education ORDER BY period
+const { rows } = await sql`SELECT * FROM education ORDER BY period
 DESC;`;
 res.status(200).json(rows);
 } catch (error) {
@@ -24,7 +24,7 @@ res.status(500).json({ error: 'Gagal mengambil data pendidikan' });
 });
 app.get('/api/skills', async (req, res) => {
 try {
-const { rows } = await sql`SELECT* FROM skills;`;
+const { rows } = await sql`SELECT * FROM skills;`;
 res.status(200).json(rows);
 } catch (error) {
 res.status(500).json({ error: 'Gagal mengambil data skill' });
@@ -33,7 +33,7 @@ res.status(500).json({ error: 'Gagal mengambil data skill' });
 });
 app.get('/api/projects', async (req, res) => {
 try {
-const { rows } = await sql`SELECT* FROM projects;`;
+const { rows } = await sql`SELECT * FROM projects;`;
 res.status(200).json(rows);
 } catch (error) {
 res.status(500).json({ error: 'Gagal mengambil data proyek' });
