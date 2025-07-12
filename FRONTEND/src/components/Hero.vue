@@ -28,7 +28,7 @@
       <img
         src="/public/images/Me.jpg"
         alt="Foto Profil"
-        class="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full object-cover shadow-lg"
+        class="w-60 h-60 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full object-cover shadow-lg"
       />
     </div>
   </section>
