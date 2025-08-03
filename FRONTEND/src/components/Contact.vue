@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear()
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-4 text-center">
       <div>
         <h3 class="font-bold mb-1">Call</h3>
-        <p class="text-gray-700">0812-3346-6631</p>
+        <p class="text-gray-700">+62 851-6194-5055</p>
       </div>
 
       <!-- Write -->
